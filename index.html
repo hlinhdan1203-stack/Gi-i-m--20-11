@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#edf2ff">
+  <title>Giải Mã 20/11</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor decor-one">✦</div>
+  <div class="decor decor-two">♡</div>
+  <div class="decor decor-three">✿</div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✿</span> GÓC TRI ÂN</div>
+      <span class="date-tag">20 · 11</span>
+    </header>
+
+    <section class="screen hero" id="home-screen">
+      <div class="hero-art">
+        <span class="art-book">📚</span>
+        <span class="art-flower">🌷</span>
+        <span class="art-heart">💗</span>
+        <span class="art-star">✦</span>
+      </div>
+      <p class="eyebrow">SPECIAL EDITION · 20/11</p>
+      <h1>GIẢI MÃ <span>20/11</span></h1>
+      <p class="description">
+        Mỗi câu hỏi là một mảnh ghép,<br>
+        mỗi đáp án là một lời tri ân.
+      </p>
+      <div class="features">
+        <span>🧩 10 câu hỏi</span>
+        <span>💌 Ngàn lời thương</span>
+      </div>
+      <button class="primary-btn" id="start-btn" type="button">
+        BẮT ĐẦU GIẢI MÃ <span>→</span>
+      </button>
+      <p class="small-note">Một hành trình nhỏ · Một tình cảm lớn</p>
+    </section>
+
+    <section class="screen card hidden" id="rules-screen">
+      <div class="big-icon">📜</div>
+      <p class="eyebrow">TRƯỚC KHI BẮT ĐẦU</p>
+      <h2>LUẬT CHƠI</h2>
+      <div class="rule-list">
+        <div class="rule">
+          <span>01</span>
+          <p>Trò chơi gồm <b>10 câu hỏi</b> về ngày 20/11 và nghề giáo.</p>
+        </div>
+        <div class="rule">
+          <span>02</span>
+          <p>Mỗi câu có 4 đáp án và chỉ có một đáp án đúng.</p>
+        </div>
+        <div class="rule">
+          <span>03</span>
+          <p>Sau khi chọn, hãy đọc lời giải thích trước khi tiếp tục.</p>
+        </div>
+        <div class="rule">
+          <span>04</span>
+          <p>Mỗi câu đúng được <b>10 điểm</b>. Điểm tối đa là 100!</p>
+        </div>
+      </div>
+      <button class="primary-btn" id="play-btn" type="button">
+        ĐÃ HIỂU, CHƠI THÔI! <span>→</span>
+      </button>
+      <button class="text-btn" id="back-btn" type="button">← Quay lại</button>
+    </section>
+
+    <section class="screen card hidden" id="quiz-screen">
+      <div class="quiz-meta">
+        <span id="question-number">NHIỆM VỤ 01 / 10</span>
+        <span class="score-pill">✦ <span id="score">0</span> điểm</span>
+      </div>
+      <div class="progress-track">
+        <div id="progress-fill"></div>
+      </div>
+
+      <div class="question-icon" id="question-icon">🧠</div>
+      <p class="eyebrow">THỬ THÁCH KIẾN THỨC</p>
+      <h2 id="question-text">Câu hỏi sẽ xuất hiện ở đây.</h2>
+      <div class="options" id="options"></div>
+
+      <div class="feedback hidden" id="feedback" aria-live="polite">
+        <strong id="feedback-title"></strong>
+        <p id="feedback-text"></p>
+      </div>
+
+      <button class="primary-btn hidden" id="next-btn" type="button">
+        CÂU TIẾP THEO <span>→</span>
+      </button>
+      <p class="small-note center">Bình tĩnh suy nghĩ, tự tin lựa chọn ✨</p>
+    </section>
+
+    <section class="screen card result-card hidden" id="result-screen">
+      <div class="result-art" id="result-art">🏆</div>
+      <p class="eyebrow">HÀNH TRÌNH HOÀN TẤT</p>
+      <h2 id="result-title">BẠN LÀM TỐT LẮM!</h2>
+      <p class="description" id="result-description"></p>
+
+      <div class="score-circle">
+        <strong id="final-score">0</strong>
+        <span>/ 100 điểm</span>
+      </div>
+
+      <div class="result-stats">
+        <div><strong id="correct-count">0</strong><span>Câu đúng</span></div>
+        <div><strong id="wrong-count">0</strong><span>Câu chưa đúng</span></div>
+      </div>
+
+      <div class="message-card">
+        💌
+        <p>Điểm số có thể khác nhau, nhưng lòng biết ơn dành cho thầy cô luôn là điều đáng quý nhất.</p>
+      </div>
+
+      <button class="primary-btn" id="restart-btn" type="button">
+        CHƠI LẠI <span>↻</span>
+      </button>
+      <button class="text-btn" id="home-btn" type="button">Về màn hình chính</button>
+    </section>
+
+    <footer>✦ GỬI NGÀN YÊU THƯƠNG ĐẾN THẦY CÔ ✦</footer>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+        </html>
+        
